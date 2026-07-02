@@ -6,13 +6,15 @@ export default function About() {
       <div className="container">
         <h2 className="section-title">About Me</h2>
         <div className="about-bento">
-          <div className="about-text">
-            {profile.about.map(function(para, i) {
-              return <p key={i}>{para}</p>;
-            })}
-          </div>
-          <div className="about-photo">
-            <img src="/images/kollene-photo.png" alt={profile.name} loading="lazy" />
+          <div className="about-top-row">
+            <div className="about-text">
+              {profile.about.map(function(para, i) {
+                return <p key={i}>{para}</p>;
+              })}
+            </div>
+            <div className="about-photo">
+              <img src="/images/kollene-photo.png" alt={profile.name} loading="lazy" />
+            </div>
           </div>
           <div className="about-cards">
             <div className="about-card">

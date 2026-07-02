@@ -82,10 +82,10 @@ button{cursor:pointer;font-family:inherit;border:none;background:none}
 
 /* ── About ── */
 .about{padding:var(--section-padding);background:var(--warm-white)}
-.about-bento{display:grid;grid-template-columns:1fr 1fr;gap:32px 48px;align-items:start}.about-bento .about-text{grid-column:1;grid-row:1/3}.about-bento .about-photo{grid-column:2;grid-row:1;justify-self:center;align-self:center;max-width:320px;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:var(--cream)}.about-bento .about-photo img{width:100%;height:auto;display:block}.about-bento .about-cards{grid-column:2;grid-row:2}
+.about-bento{display:flex;flex-direction:column;gap:48px}.about-top-row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.about-photo{justify-self:center;max-width:340px;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:var(--cream)}.about-photo img{width:100%;height:auto;display:block}.about-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.about-card{margin-bottom:0}
 .about-text{max-width:65ch}
 .about-text p{font-size:1.05rem;color:var(--text-primary);line-height:1.8;margin-bottom:20px;text-align:left}
-.about-card{background:var(--cream);border:1px solid var(--border);border-radius:16px;padding:20px;margin-bottom:16px;transition:box-shadow 0.3s}.about-card:last-child{margin-bottom:0}
+.about-card{background:var(--cream);border:1px solid var(--border);border-radius:16px;padding:20px;transition:box-shadow 0.3s}
 .about-card:hover{box-shadow:0 4px 16px rgba(92,58,33,0.08)}
 .about-card h3{font-family:var(--font-serif);font-size:1.2rem;color:var(--narra);margin-bottom:16px}
 .detail-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border)}
@@ -155,5 +155,5 @@ button{cursor:pointer;font-family:inherit;border:none;background:none}
 @media print{body{background:white}.navbar,.hero-scroll-indicator{display:none}.hero{min-height:auto;padding:40px 0}.hero-bg{display:none}.pdf-modal{position:static;background:none;padding:0}.pdf-modal-content{width:100%;height:auto;max-width:100%;box-shadow:none;border-radius:0}.pdf-close{display:none}.pdf-iframe{min-height:100vh}}
 
 /* ── Responsive ── */
-@media(max-width:768px){.section-title{font-size:2rem}.hero-title{font-size:2.2rem}.hero-description{font-size:1rem}.about-grid{grid-template-columns:1fr}.about-bento{grid-template-columns:1fr}.about-bento .about-text{grid-column:1;grid-row:auto}.about-bento .about-photo{grid-column:1;grid-row:auto;max-width:280px}.about-bento .about-cards{grid-column:1;grid-row:auto}.about-text{max-width:none}.academic-grid{grid-template-columns:1fr}.gallery-flat-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}.nav-link{padding:6px 10px;font-size:0.78rem}.pdf-modal-content{width:100vw;height:100vh;border-radius:0}}
+@media(max-width:768px){.section-title{font-size:2rem}.hero-title{font-size:2.2rem}.hero-description{font-size:1rem}.about-grid{grid-template-columns:1fr}.about-top-row{grid-template-columns:1fr}.about-cards{grid-template-columns:1fr}.about-text{max-width:none}.academic-grid{grid-template-columns:1fr}.gallery-flat-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}.nav-link{padding:6px 10px;font-size:0.78rem}.pdf-modal-content{width:100vw;height:100vh;border-radius:0}}
 @media(max-width:480px){.hero-title{font-size:1.8rem}.hero-actions{flex-direction:column;align-items:center}.btn{width:100%;text-align:center}}
