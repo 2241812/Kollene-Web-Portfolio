@@ -15,8 +15,7 @@ export default function About() {
             <div className="about-photo">
               <img src="/images/kollene-photo.png" alt={profile.name} loading="lazy" />
             </div>
-          </div>
-          <div className="about-cards">
+            <div className="about-cards">
             <div className="about-card">
               <h3>Details</h3>
               <div className="detail-row">
@@ -47,6 +46,7 @@ export default function About() {
           </div>
         </div>
       </div>
+    </div>
     </section>
   );
 }
