@@ -5,17 +5,17 @@ export default function About() {
     <section id="about" className="about">
       <div className="container">
         <h2 className="section-title">About Me</h2>
-        <div className="about-grid">
+        <div className="about-bento">
           <div className="about-text">
             {profile.about.map(function(para, i) {
               return <p key={i}>{para}</p>;
             })}
           </div>
-          <div className="about-sidebar"><div className="about-sidebar-inner">
-            <div className="about-photo">
-              <img src="/images/kollene-photo.png" alt={profile.name} loading="lazy" />
-            </div>
-            <div className="about-cards"><div className="about-card">
+          <div className="about-photo">
+            <img src="/images/kollene-photo.png" alt={profile.name} loading="lazy" />
+          </div>
+          <div className="about-cards">
+            <div className="about-card">
               <h3>Details</h3>
               <div className="detail-row">
                 <span className="detail-label">Course</span>
@@ -43,8 +43,6 @@ export default function About() {
               <p className="about-email">{profile.email}</p>
             </div>
           </div>
-          </div>
-        </div>
         </div>
       </div>
     </section>
