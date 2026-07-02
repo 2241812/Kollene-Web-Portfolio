@@ -64,7 +64,7 @@ export default function Navbar(props) {
     <nav className={navClass}>
       <div className="nav-inner">
         <span className="nav-logo" onClick={function() { scrollTo("hero"); }}>
-          <img src="/favicon.png" alt="Logo" className="nav-logo-img" />
+          <img src="/logo-nav.png" alt="Logo" className="nav-logo-img" />
           <span className="nav-logo-text">Kollene Aika</span>
           <span className="nav-logo-sub">Architecture Portfolio</span>
         </span>
