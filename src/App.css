@@ -42,7 +42,7 @@ button{cursor:pointer;font-family:inherit;border:none;background:none}
 .navbar.scrolled{background:rgba(61,38,21,0.88);backdrop-filter:blur(12px);box-shadow:0 1px 3px rgba(0,0,0,0.15)}
 .navbar.scrolled:not(.hero-theme){background:rgba(252,249,247,0.92);box-shadow:0 1px 8px rgba(44,24,16,0.08)}
 .nav-inner{max-width:var(--max-width);margin:0 auto;padding:0 16px;width:100%;display:flex;justify-content:space-between;align-items:center}
-.nav-logo{font-family:var(--font-serif);font-size:1.1rem;color:var(--narra);cursor:pointer;letter-spacing:0.04em;line-height:1.2}
+.nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer;line-height:1.2}.nav-logo-img{width:32px;height:32px;border-radius:4px;object-fit:contain;filter:brightness(0.1)}.hero-theme .nav-logo-img{filter:brightness(0) invert(1)}.nav-logo-text{font-family:var(--font-serif);font-size:1.1rem;color:var(--narra);letter-spacing:0.04em}.hero-theme .nav-logo-text{color:var(--capiz)}
 .hero-theme .nav-logo{color:var(--capiz)}
 .nav-logo-sub{display:block;font-family:var(--font-sans);font-size:0.6rem;font-weight:500;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.12em;margin-top:1px}
 .hero-theme .nav-logo-sub{color:rgba(245,240,232,0.65)}
